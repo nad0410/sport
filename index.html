@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Integration du "reset" css en premier -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sport.com</title>
+    
+</head>
+<body>
+    <header>
+        <!-- integration header a positionner a gauche -->
+        <div class='header-main container'>
+            <div class='header-left'>
+                <img src="./images/logo.png" alt="Logo">
+                <h1>Lorem ipsum dolor <span class='text-color'>sit amet</span></h1>
+            </div>
+        <!-- integration header a positionner a droite -->
+            <div class='header-right'>
+                <p>Bonjour Julien</p>
+                <!-- les liens -->
+                <nav>
+                    <ul>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Parrainage</a></li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> <!-- Fin du header-main -->
+
+    <main>
+        <!-- faire container pour block main -->
+        <!-- integration de l'image catalogue-->
+        <div class='main-div container'>
+            <img src="./images/header-page-catalogue.png" alt="Catalogue">
+
+            <!-- ajout des produits -->
+            <section class='produit-section'>
+                <!-- attention produit 2 avant le produit 1 -->
+                <div class='produit-row'>                    
+                    <div class="produit-item">
+                        <img src="./images/gant-boxe-2.png" alt="gant-boxe-2">
+                        <h2 class='text-center'>Gants de boxe Klimax V3</h2>
+                        <div class='produit'>
+                            <a href="#" class="btn">Voir la vente</a>
+                            <p class='prix'><del>120&euro;</del></p>
+                            <p class='prix text-color'>65&euro;</p>
+                        </div>
+                        <p class='produit-discount'>- 45%</p>
+                    </div>
+                    <div class="produit-item">
+                        <img src="./images/gant-boxe-1.png" alt="gant-boxe-1">
+                        <h2 class='text-center'>Gants de boxe Klimax V3</h2>
+                        <div class='produit'>
+                            <a href="#" class="btn">Voir la vente</a>
+                            <p class='prix'><del>120&euro;</del></p>
+                            <p class='prix text-color'>65&euro;</p>
+                        </div>
+                        <p class='produit-discount'>- 45%</p>
+                    </div>
+                </div>
+                <!-- repetition du .produit-row pour le mettre en dessous-->
+                <div class='produit-row'>
+                    <div class="produit-item">
+                        <img src="./images/gant-boxe-2.png" alt="gant-boxe-2">
+                        <h2 class='text-center'>Gants de boxe Klimax V3</h2>
+                        <div class='produit'>
+                            <a href="#" class="btn">Voir la vente</a>
+                            <p class='prix'><del>120&euro;</del></p>
+                            <p class='prix text-color'>65&euro;</p>
+                        </div>
+                        <p class='produit-discount'>- 45%</p>
+                    </div>
+                    <div class="produit-item">
+                        <img src="./images/gant-boxe-1.png" alt="gant-boxe-1">
+                        <h2 class='text-center'>Gants de boxe Klimax V3</h2>
+                        <div class='produit'>
+                            <a href="#" class="btn">Voir la vente</a>
+                            <p class='prix'><del>120&euro;</del></p>
+                            <p class='prix text-color'>65&euro;</p>
+                        </div>
+                        <p class='produit-discount'>- 45%</p>
+                    </div>
+                </div> <!-- Fin partie produits-->
+
+                <!-- mettre une nav a cheval sur le main et le footer  -->
+                <div class='nav-deuxième'>
+                    <ul>
+                        <li><a href="#">Qui sommes-nous</a></li>
+                        <li class="nav-separateur"></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class='nav-separateur'></li>
+                        <li><a href="#">Assistance</a></li>
+                        <li class='nav-separateur'></li>
+                        <li><a href="#">CGV</a></li>
+                    </ul>
+                </div> <!-- Fin .nav-deuxième-->
+            </section> 
+        </div> <!-- Fin div-main contenair-->
+    </main> <!-- Fin du main -->
+
+    <footer>
+
+        <!-- mettre icon livre,camion, cadenat et pouce -->      
+        <div class='icon container'>
+          
+            <div class="icon-row">
+                <div class='icon-item'>
+                    <img src="./images/icon-livre.png" alt="CGV">
+                    <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quas iusto, eius consequuntur!</p>
+                </div>
+                <div class='icon-item'>
+                    <img src="./images/icon-camion.png" alt="Camion de livraison">
+                    <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quas iusto, eius consequuntur!</p>
+                </div>                       
+                <div class='icon-item'>
+                    <img src="./images/icon-cadenat.png" alt="Cadenat">
+                    <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quas iusto, eius consequuntur!</p>
+                </div>
+                <div class='icon-item'>
+                    <img src="./images/icon-pouce.png" alt="Pouce en l'air">
+                    <p class='text-center '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quas iusto, eius consequuntur!</p>
+                </div>
+            </div>
+        </div>
+
+        <!--  faire une ligne de separation  -->
+        <div class='footer-separation container'></div>
+
+        <!-- mettre les icones reseaux sociaux -->
+        <div class='social-icon container'>
+            <a href=""><img src="./images/icon-facebook.png" alt="facebook"></a>
+            <a href=""><img src="./images/icon-twitter.png" alt="twitter"></a>
+            <a href=""><img src="./images/icon-linkedin.png" alt="linkedin"></a>
+        </div>
+
+        <!-- mettre copyrignt -->
+        <p class='text-center copyright'>&#169; 2022 sport privilege. Tous droit réservé</p>
+
+    </footer> <!-- Fin du footer-->
+</body>
+
+</html>
