@@ -12,7 +12,7 @@
 general
 */
 body {
-    font-family: LiberationSans-Regular, sans-serif;
+    font-family: "LiberationSans-Regular", sans-serif;
 }
 .container {
     max-width: 1000px;
@@ -144,7 +144,7 @@ main {
 .prix del,
 .prix {
     font-size: 30px;
-    font-family: LiberationSans-Bold, sans-serif;
+    font-family: "LiberationSans-Bold", sans-serif;
     margin-top: 7px;
 }
 .produit-discount {
@@ -155,7 +155,7 @@ main {
     background-color: #1c1c1c;
     padding: 5px 7px;
     color: #e99e05;
-    font-family: LiberationSans-Bold, sans-serif;
+    font-family: "LiberationSans-Bold", sans-serif;
     font-size: 20px;
     border-radius: 5px;
 }
@@ -186,28 +186,31 @@ footer {
     background-color: #373737;
     padding: 50px 20px;
 }
+.icon {
+    display: flex;
+    justify-content: center;
+}
 .icon-row {    
     /* border: 2px solid white; */
     display: flex;
-    justify-content: center;
 }
 .icon-item {
     /* border: 2px solid rgb(211, 110, 21); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    padding: 0rem 1rem;
 }
 .icon-item img {
     /* border: 2px solid yellow; */
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     width: 60px;
     height: 60px;
 }
 .icon-item p {
     /* border: 2px solid rgb(124, 92, 92); */
     color: #fff;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .footer-separation {
     background-color: #818181;
@@ -232,3 +235,48 @@ footer {
 /* résolution est inférieure à 576px.  */
 
 /* @media (max-width: 576px) {} */
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .header-main {
+        flex-direction: column;
+    }
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-right {
+        align-items: flex-start;
+        margin-top: 3rem;
+    }
+    .header-right p {
+        margin-bottom: 3rem;
+    }
+    nav ul li:first-child {
+        padding-left: 0rem;
+    }
+    .produit-row {
+        flex-direction: column;
+    }
+    .produit-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .produit-row .produit-item:first-child {
+        margin-right: inherit;
+    }
+    .produit-discount {
+        right: 6%;
+    }
+    .produit{
+        padding: 2rem 0rem;
+        min-width: 300px;
+    }
+    .icon-row {
+        flex-direction: column;
+    }
+    .icon-item {
+        margin-bottom: 2rem;
+    }
+}
